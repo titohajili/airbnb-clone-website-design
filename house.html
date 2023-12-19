@@ -9,11 +9,12 @@
 </head>
 <body>
     <nav id="navBar" class="navbar-white">
-        <img src="images/logo-red.png" class="logo">
+        <a href="index.html"><img src="images/logo-red.png" class="logo"></a>
+        
         <ul class="nav-links">
             <li><a href="#" class="active">Popular Places</a></li>
             <li><a href="#">Travel Outside</a></li>
-            <li><a href="#">Online Packages</a></li>
+            <li><a href="listing.html">Online Packages</a></li>
         </ul>
         <a href="#" class="register-btn">Register Now</a>
         <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
@@ -57,15 +58,75 @@
                 <label>Check-out</label>
                 <input type="text" placeholder="Add Date">
             </div>
-            <div>
+            <div class="guest-field">
                 <label>Guest</label>
                 <input type="text" placeholder="2 guest">
             </div>
             <button type="submit">Chek Availablity</button>
         </form>
+
+        <ul class="detalis-list">
+            <li> <i class="fa-solid fa-house"></i>Entire Home
+                <span>You will have the entire flat for you.</span>
+            </li>
+            <li> <i class="fa-solid fa-paintbrush"></i>Enhanced Clean
+                <span>This host has committed to airbnb's cleaning process.</span>
+            </li>
+            <li> <i class="fa-solid fa-location-dot"></i>Great Location
+                <span>90% of recent guest gave the location a 5 star rating.</span>
+            </li>
+            <li> <i class="fa-solid fa-heart"></i>Great Check-in Experience
+                <span>100% of recent guests gave the check-in process a 5 star rating.</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+
+        <p class="home-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ipsa eligendi, deleniti sequi ea repellendus quo minus iusto nostrum expedita quod quisquam a nisi, ab, officiis ratione nihil consectetur amet beatae maiores? Temporibus maxime quos pariatur assumenda unde ab similique itaque ex voluptatum nobis consectetur excepturi, provident adipisci laboriosam facere autem velit voluptatibus cumque quam ullam. Amet eligendi voluptatum ut nisi. Iure, sed nisi! Soluta, perspiciatis!</p>
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.9160976410376!2d46.65032431483268!3d41.63594496358552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40464afbd643399d%3A0x7252c700d6c3dee4!2sDede%20Gorgud%20Park!5e0!3m2!1sru!2saz!4v1703013595465!5m2!1sru!2saz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <b>San Francisco, California, United States</b>
+            <p>It's like a home away from home.</p>
+        </div>
+        <hr class="line">
+        <div class="host">
+            <img src="images/host.png">
+            <div>
+
+                <h2>hosted by Brandon</h2>
+                <p><span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </span> &nbsp; &nbsp; 245 reviews &nbsp; &nbsp; Response rate 100% &nbsp; &nbsp; Response time: 60 min</p>
+            </div>
+        </div>
+        <a href="#" class="cnt-host">Contact Host</a>
+
+    </div>
+    <div class="container">
+        <div class="footer">
+            <a href="https://github.com/titohajili" class="git"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.youtube.com/channel/UCbmA9KMXTbtqxjoYJHZvIYQ" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/magahacili/" class="face"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/m%C9%99h%C9%99mm%C9%99d-hac%C4%B1yev-8179992a1/" class="linkendin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@magahacili?lang=ru-RU" class="tik-tok"><i class="fa-brands fa-tiktok"></i></a>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
     </div>
 
-
+    <script>
+        var navBar = document.getElementById("navBar");
+            function togglebtn(){
+            navBar.classList.toggle("hidemenu");
+        }
+        </script>
 
 </body>
 </html>
