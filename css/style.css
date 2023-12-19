@@ -292,7 +292,7 @@ nav .fa-bars{
         max-height: 100px;
         overflow: hidden;
         transition: max-height 0.6s;
-        border-radius: 0 0 5px 5px;
+        
     }
     nav .nav-links li{
         margin: 10px 0;
@@ -511,3 +511,117 @@ nav .fa-bars{
 }
 
 
+/* ------small screen for listing page----- */
+
+@media only sreen and (max-width:700px){
+    .list-container{
+        margin-top: 15px;
+    }
+    .left-col, .right-col, .house-img, .house-info{
+        flex-basis: 100%;
+    }
+    .left-col h1{
+        font-size: 22px;
+    }
+    .house-info h3{
+        font-size: 18px;
+    }
+    .house-info i{
+        font-size: 18px;
+    }
+    .pagination span{
+        margin: 10px 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+}
+/* \----house-telais page */
+.house-details{
+    padding: 0 12%;
+}
+.house-title{
+    margin-top: 50px;
+}
+.house-title h1{
+    font-weight: 600;
+}
+.house-title .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+}
+.house-title span{
+    margin: 0 20px;
+}
+.house-title i{
+    color: #ff5361;
+    font-size: 14px;
+}
+
+.gallery{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 'first first . .' 'first first . .';
+    margin: 20px 0;
+}
+.gallery div img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.gallery-img-1{
+    grid-area:first;
+}
+small-details h2{
+    font-weight: 500;
+}
+.small-details h4{
+    text-align: right;
+    font-size: 22px
+}
+.line{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0 50px;
+}
+.chek-form{
+    margin: 30px 0;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0,0,0.03);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 50px;
+}
+.chek-form label{
+    display: block;
+}
+.chek-form div{
+    padding: 20px;
+}
+.chek-form input{
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+.chek-form button{
+    background: #ff5361;
+    border:0;
+    outline: none;
+    color: #fff;
+    padding: 18px;
+    width: 350px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.chek-form button:hover{
+    background: #df3846;
+    color: #fff;
+}
